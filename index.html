@@ -12,136 +12,20 @@
 </head>
 
 <body>
-    <!-- Header section -->
-    <header>
-        <nav>
-            <li>
-                <a href="#home"></a>
-                <img id="logo" src="tcr.png" >
-            </li>
-            <div id="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="slideshow">
-        <!-- Slideshow section -->
-        <div class="slideshow-container">
-            <!-- image 1 -->
-            <div class="slide fade">
-                <img src="projects/IMG_0061.jpg" style="width: 100%;">
-                <div class="caption">caption</div>
-            </div>
-            <!-- image 2 -->
-            <div class="slide fade">
-                <img src="projects/IMG_0109.jpg" style="width: 100%;">
-                <div class="caption">caption</div>
-            </div>
-            <!-- image 3 -->
-            <div class="slide fade">
-                <img src="projects/IMG_0179.jpg" style="width: 100%;">
-                <div class="caption">caption</div>
-            </div>
-            <!-- image 4 -->
-            <div class="slide fade">
-                <img src="projects/IMG_9156.jpg" style="width: 100%;">
-                <div class="caption">caption</div>
-            </div>
-
-            <!-- navigation buttons -->
-            <!-- <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlide(1)">&#10095;</a> -->
+    <div class="tccr">
+        <div class="logo">
+            <img src="tcr.png" alt="Logo">
         </div>
     </div>
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 4000); 
-        }
-    </script>
-
-    <div class="grid-container">
-    <!-- Home section -->
-        <section id="home">
-            <div class="home-content">
-                <h1>The Texas Construction Company</h1>
-                <p>We provide exceptional products and services.</p>
-                <a href="#" class="btn">Get Started</a>
-            </div>
-        </section>
-
-        <!-- About section -->
-        <section id="about">
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at turpis sagittis, cursus nisl id,
-                    consectetur sapien. Sed fermentum, metus vitae efficitur viverra, lacus odio varius nisi, nec gravida
-                    nisl erat a enim. </p>
-            </div>
-        </section>
-
-        <!-- Services section -->
-        <section id="services">
-            <div class="services-content">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Service 1</li>
-                    <li>Service 2</li>
-                    <li>Service 3</li>
-                    <li>Service 4</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Products section -->
-        <section id="projects">
-            <div class="projects-content">
-                <h2>Our Projects</h2>
-                <ul>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                    <li>Project 3</li>
-                    <li>Project 4</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Contact section -->
-        <section id="contact">
-            <div class="contact-content">
-                <h2>Contact Us</h2>
-                <p>123 Main Street, City, State, ZIP</p>
-                <p>Email: info@yourbusiness.com</p>
-                <p>Phone: (123) 456-7890</p>
-            </div>
-        </section>
+    <div class="header">
+        <h1 id="caution">Caution! This Website is Under Construction</h1>
     </div>
-
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2023 The Texas Construction & Renovation Company LLC. All rights reserved.</p>
-    </footer>
+    <div class="skiddy">    
+        <img src="tcc-cons-dev-delay.gif">
+    </div>
+    <p><b>For Inquiries, contact us at JJ@TheTexasConstructionCompany.com</b></p>
+    <p class="cred">illustrations by Vecteezy.com</p>
 </body>
+
 
 </html>

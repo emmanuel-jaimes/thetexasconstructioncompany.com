@@ -1,14 +1,160 @@
 html {
-    font-family: 'Cardo', serif;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Cardo', serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: azure;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#home h1 {
-    font-size: 10em;
-    font-family: 'Montserrat', sans-serif;
+body h2 {
+    font-family: 'Cardo', serif;
+}
+
+/* body header {
+    padding: 5% 5% 8% 5%;
+} */
+
+#menu {
+    font-weight: bold;
+    letter-spacing: 1px;
+    float: right;
+}
+
+#menu ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+
+#menu li {
+    display: inline;
+    padding: 50px;
+    background-color: transparent;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 10px;
+}
+
+.logo {
+    order: 1;
+    justify-content: left;
+}
+
+.logo img {
+    width: 400px;
+    height: auto;
+}
+
+.slideshow {
+    background-color: #070600;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    margin: auto;
+    height: 10%;
+}
+
+.slide {
+    display: contents;
+}
+
+.caption {
+    color: #FFEDDF;
+    display: none;
+}
+
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} */
+
+/* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}    
+}
+
+#home h1{
+    font-size: 5em;
+    font-family: 'Cardo', serif;
+}
+
+.grid-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+footer {
+    background-color: rgb(74, 74, 74);
+    color: white;
+}
+
+#caution{
+    align-self: center;
+}
+
+.skiddy img {
+    max-width: 75%;
+    height: auto;
+}
+
+.skiddy {
+    display: flex;
+    justify-content: center;
+}
+
+#caution {
+    text-align: center;
+}
+
+.tccr {
+    padding-left: 5em;
+    padding-top: 5em;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
