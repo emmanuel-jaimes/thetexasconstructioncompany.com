@@ -158,3 +158,10 @@ footer {
     top: 0;
     left: 0;
 }
+
+@media (max-width: 767px) {
+    .tccr {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
