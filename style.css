@@ -4,139 +4,175 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* BODY */
 body {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-overflow: ellipsis;
+    font-size: large;
+    line-height: 1cm;
 }
 
-body h2 {
-    font-family: 'Cardo', serif;
-}
-
-#menu {
-    font-weight: bold;
-    letter-spacing: 1px;
-    float: right;
-}
-
-#menu ul {
-    overflow: hidden;
-    list-style-type: none;
-}
-
-#menu li {
-    display: inline;
-    padding: 50px;
-    background-color: transparent;
-}
-
-#menu a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.header {
-    display: flex;
-    padding: 10px;
-}
-
-.logo {
-    order: 1;
-    justify-content: left;
-}
-
-.logo img {
-    width: 400px;
+.top-bar img {
+    max-width: 350px;
     height: auto;
+    margin-top: 25px;
+    margin-left: 25px;
+} 
+
+a img {
+    border: none;
 }
 
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1200px;
+}
+
+.row.collapse .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.expand {
+    width: 1300px;
+    max-width: 100%;
+}
+
+/* top bar */
+.top-bar .title-area {
+    position: relative;
+    margin: 0;
+}
+.top-bar {
+    height: 136px;
+    position: relative;
+    margin-bottom: 0;
+    overflow: visible;
+    display: flex;
+}
+
+.top-bar ul.right {
+    margin-top: 45px;
+}
+.top-bar-section ul {
+    width: auto;
+    height: auto !important;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.top-bar ul {
+    list-style: none;
+}
+.right a{
+    float: right;
+    padding: 2em;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    /* padding-top: 10%; */
+}
+.grid-item {
+    grid-column: 2;
+    /* border: solid green; */
+}
+
+.grid-item header {
+    /* display: grid; */
+}
+
+/* SLIDESHOW */
 .slideshow {
-    background-color: #070600;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    /* border: solid black; */
+    /* background-color: #fdda16; */
 }
-
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 750px;
     margin: auto;
     height: 10%;
 }
-
 .slide {
     display: contents;
 }
-
-.caption {
-    color: #FFEDDF;
-    display: none;
-}
-
-.prev:hover, next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-} */
 
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @keyframes fade {
     from {opacity: .6}
     to {opacity: 1}    
 }
 
+/* all */
+h2 {
+    font-family: bookman;
+    font-size: xx-large;
+    letter-spacing: 3px;
+}
+
+
+/* HOME */
+#home {
+    padding-top: 2em;
+}
 #home h1{
-    font-size: 5em;
-    font-family: 'Cardo', serif;
+    font-size: xxx-large;
+    font-family: bookman;
 }
 
-.grid-container {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
+/* ABOUT */
+#about {
+    padding-top: 4%;
+    grid-column: 2;
+    font-size: larger;
 }
 
+/* SERVICES */
+#services {
+    font-size: larger;
+}
+
+#services li{
+    display: inline-block;
+    padding: 2%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: #F0F7F4;
+    border-radius: 2%;
+    font-weight: 600;
+    line-height: 2%;
+    color: white;
+}
+
+/* CONTACT */
+#contact {
+    font-size: larger;
+}
+
+
+/* FOOTER */
 footer {
     background-color: rgb(74, 74, 74);
     color: white;
 }
 
-#caution{
-    align-self: center;
-}
-
-.skiddy img {
-    max-width: 75%;
-    height: auto;
-}
-
-.skiddy {
-    display: flex;
-    justify-content: center;
-}
-
-#caution {
-    text-align: center;
-}
-
-.tccr {
-    padding-left: 5%;
-    padding-top: 5%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.cred {
-    text-align: center;
-}
-
+/* COMPATABILITY */
 @media (max-width: 880px) {
     .tccr {
         position: static;

@@ -8,24 +8,179 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@400;500;600;800&display=swap');
+        @font-face {
+            font-family: bookman;
+            src: url(fonts/BOOKOSI.TTF);
+            /* src: url(fonts/BOOKOS.TTF); */
+            /* src: url(fonts/BOOKOSB.TTF); */
+            /* src: url(fonts/BOOKOSBI.TTF); */
+        }
     </style>
 </head>
 
 <body>
-    <div class="tccr">
-        <div class="logo">
-            <img src="tcr.png" alt="Logo">
+    <div class="nav-banner-wrap">
+        <div class="nav">
+            <div class="row collapse">
+                <div class="row expand">
+                    <nav class="top-bar" data-topbar="">
+                        <ul class="title-area">
+                            <li class="name">
+                                <a href="/" title="Texas Construction and Renovation">
+                                    <picture>
+                                        <img class="tccr-image-block" src="tcr.png">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                        <section class="top-bar-section">
+                            <ul class="right">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </section>                        
+                    </nav>
+                </div>
+            </div>
         </div>
+
     </div>
-    <div class="header">
-        <h1 id="caution">Caution! This Website is Under Construction</h1>
+   
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <!-- Home section -->
+            <section id="home">
+                <h1>Welcome to A Better Build</h1>
+            </section>
+        </div>
+        <!-- Slideshow section -->
+        <div class="grid-item">
+            <div class="slideshow">
+                <!-- Slideshow section -->
+                <div class="slideshow-container">
+                    <!-- image 1 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_0061.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 2 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_0109.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 3 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_0179.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 4 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_9156.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 5 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_1775.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 6 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_1776.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 7 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_1890.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 8 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_1906.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 9 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_1977.jpg" style="width: 100%;">
+                    </div>
+                    <!-- image 10 -->
+                    <div class="slide fade">
+                        <img src="projects/IMG_4019.JPG" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+        
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("slide");
+                    
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+        
+                    slides[slideIndex-1].style.display = "block";
+                    setTimeout(showSlides, 4000); 
+                }
+            </script>
+        </div>
+        <!-- About section -->
+        <div class="grid-item">
+            <section id="about">
+                <div class="about-content">
+                    <h2>Who We Are</h2>
+                    <p>With almost 10 years in the commercial and residential industry, 
+                        we know what it takes to deliver exceptional quality to you, the
+                        consumer. We have delivered quality throughout our years in the 
+                        industry and will cease at nothing less. 
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Services section -->
+        <div class="grid-item">
+            <section id="services">
+                <div class="services-content">
+                    <h2>Our Services</h2>
+                    <p>Some of our services offered but not limited to...</p>
+                    <ul>                        
+                        <li>Fences</li>
+                        <br>
+                        <li>Drainage Solutions</li>
+                        <br>                        
+                        <li>Flatwork</li>
+                        <li>Grading</li>
+                        <li>Demo</li>
+                        <li>Haul-Off</li>
+                        <br>
+                        <li>Concrete</li>
+                        <li>Driveways</li>
+                        <li>Patios</li>
+                        <li>Foundations</li>
+                        <li>Slabs</li>
+                    </ul>
+                    <h4>Have something else in mind?</h4>
+                    <h3>Contact us to build your own custom project today!</h3>
+                </div>
+            </section>
+        </div>    
+
+        <!-- Contact section -->
+        <div class="grid-item">
+            <section id="contact">
+                <div class="contact-content">
+                    <h2>Reach us at</h2>
+                    <p>JJ@TheTexasConstructionCompany.com</p>
+                    <p>(469) 438-8312</p>
+                </div>
+            </section>
+        </div>    
     </div>
-    <div class="skiddy">    
-        <img src="tcc-cons-dev-delay.gif">
-    </div>
-    <p class="cred"><b>For Inquiries, contact us at JJ@TheTexasConstructionCompany.com</b></p>
-    <p class="cred">illustrations by Vecteezy.com</p>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2023 The Texas Construction & Renovation Company LLC. All rights reserved.</p>
+    </footer> 
 </body>
-
-
 </html>
